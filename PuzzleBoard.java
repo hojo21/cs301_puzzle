@@ -12,7 +12,7 @@ import android.graphics.Canvas;
 import android.content.ClipData;
 import android.content.Context;
 import android.widget.Button;
-//
+
 public class PuzzleBoard extends SurfaceView implements View.OnTouchListener, View.OnClickListener,
         View.OnDragListener {
 
@@ -213,8 +213,6 @@ public class PuzzleBoard extends SurfaceView implements View.OnTouchListener, Vi
                 puzzleHeight/4,puzzleHeight/4, false);
     }
 
-
-
     public Bitmap assignProperBitmap(int row, int col) {
         switch (board[row][col]) {
             case 1: //piece is a 1
@@ -299,10 +297,10 @@ public class PuzzleBoard extends SurfaceView implements View.OnTouchListener, Vi
 
     @Override
     public void onClick(View view) {
-        if(view == randomButton) {
+
             shuffle();
             invalidate();
-        }
+
     }
 
     @Override

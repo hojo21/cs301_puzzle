@@ -23,6 +23,6 @@ public class MainActivity extends AppCompatActivity {
         //randomButton.setOnClickListener(controller);
         puzzle.setOnTouchListener(puzzle);
         puzzle.setOnDragListener(puzzle);
-        //randomButton.setOnClickListener(this);
+        randomButton.setOnClickListener(puzzle);
 }
 }
